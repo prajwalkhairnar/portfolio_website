@@ -542,6 +542,17 @@ a {
   text-decoration-color: var(--color-link-hover);
 }
 
+/* Profile photo */
+.about-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  margin-bottom: 2rem;
+  display: block;
+}
+
 /* Facts panel */
 .facts-panel {
   display: flex;
@@ -637,6 +648,15 @@ a {
 /* Concurrent entries slightly offset */
 .timeline-concurrent.timeline-entry::before {
   background: var(--color-surface);
+}
+
+/* Current role — filled teal dot */
+.timeline-current.timeline-entry::before {
+  background: #01696f;
+  border-color: #01696f;
+}
+.timeline-current.timeline-entry:hover::before {
+  background: #01696f;
 }
 
 .timeline-date {
